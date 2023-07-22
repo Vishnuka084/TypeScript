@@ -1,1 +1,1 @@
-console.log('type script!');
+let age =10;
