@@ -1,3 +1,3 @@
 "use strict";
-let age = 25;
-console.log('age :' + age);
+let age = 30;
+console.log('my age is :' + age);
