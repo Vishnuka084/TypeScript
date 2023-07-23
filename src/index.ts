@@ -56,7 +56,23 @@ const helloIsuru = (message:string):void=>{
 helloIsuru('Hello  Isuru');*/
 
 //function expression
+/*
 const helloIsuru = function (message:string):void{
     console.log(message);
 }
-helloIsuru('heelo!');
+helloIsuru('heelo!');*/
+
+
+//-----optional parameter-----
+/*
+function horekda(name:string,isThief?:boolean):void{
+    if (isThief){
+        console.log(`${name} horaaaa!`);
+    }else {
+        console.log(`${name} hoda amathi!`);
+
+    }
+}
+
+horekda('Ranil',true);
+horekda('Anura',)*/
