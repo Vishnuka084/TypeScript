@@ -21,10 +21,16 @@ console.log(dog.bread);
 //-------function-------
 
 function getAgeAfterThreeY(age:number,name?:string):number{
+    if (name){
+        console.log(`Hello ${name}`);
+    }else {
+        console.log(`Hello age ${age}`);
+
+    }
     return age+3;
 }
 let myAge:number=getAgeAfterThreeY(10);
-
+let myNewAge:number=getAgeAfterThreeY(25,'mahinda');
 //---------------------
 let rate:number=1.5;
 rate=2.5;
