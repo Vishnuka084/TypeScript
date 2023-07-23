@@ -85,6 +85,7 @@ horekda('Anura',)*/
 
 //----red parameter
 
+/*
 function sum(...values:number[]):number{
     let count:number=0;
     for (let temp of values){
@@ -93,3 +94,25 @@ function sum(...values:number[]):number{
     return count;
 }
 console.log(sum(10,20,30,40));
+*/
+
+
+
+///////---Object--------->
+//literals
+
+const student={
+    name:'Mahinda',
+    age:90,
+    address:{
+        city:'kaluthara',
+        postal:12500
+    }
+};
+
+
+// -------------
+console.log(student);
+console.log(student.name);
+console.log(student.address);
+console.log(student.address.city);

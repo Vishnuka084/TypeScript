@@ -1,11 +1,13 @@
 "use strict";
-function horekda(name, isThief) {
-    if (isThief) {
-        console.log(`${name} horaaaa!`);
+const student = {
+    name: 'Mahinda',
+    age: 90,
+    address: {
+        city: 'kaluthara',
+        postal: 12500
     }
-    else {
-        console.log(`${name} hoda amathi!`);
-    }
-}
-horekda('Ranil', true);
-horekda('Anura');
+};
+console.log(student);
+console.log(student.name);
+console.log(student.address);
+console.log(student.address.city);
