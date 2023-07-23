@@ -150,6 +150,7 @@ console.log(student.address.city);*/
 
 // ---------------------------------------
 
+/*
 class Student{
     name:string;
     age:number;
@@ -168,4 +169,42 @@ class Student{
 }
 
 const student= new Student("Mahinda",90,{city:'Kaluthara',postal:12500});
-console.log(student);
+console.log(student);*/
+
+
+/// -----Optional property ----
+/*interface Animal{
+    name:string;
+    age?:number;//optional
+}
+
+const a1:Animal={
+    name:'Dog'
+
+}
+const a2:Animal={
+    name:'Dog',
+    age:10
+}*/
+
+
+/// -----ReadOnly property ----
+interface Animal{
+    name:string;
+    age?:number;//optional
+    readonly isActive:boolean; //readOnly
+
+}
+
+const a1:Animal={
+    name:'Dog',
+    isActive:true
+
+}
+const a2:Animal={
+    name:'Dog',
+    age:10,
+    isActive:false
+
+}
+a1.isActive=false;
