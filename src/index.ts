@@ -99,7 +99,8 @@ console.log(sum(10,20,30,40));
 
 
 ///////---Object--------->
-//literals
+//literals base----01
+/*
 
 const student={
     name:'Mahinda',
@@ -115,4 +116,56 @@ const student={
 console.log(student);
 console.log(student.name);
 console.log(student.address);
-console.log(student.address.city);
+console.log(student.address.city);*/
+
+
+//interface base -----02
+/*
+
+interface student{
+    name:string;
+    age:number;
+    address:{
+        city:string;
+        postal:number;
+    }
+}
+
+const student:student={
+    name:'Mahinda',
+    age:90,
+    address:{
+        city:'kaluthara',
+        postal:12500
+    }
+};
+
+
+// -------------
+console.log(student);
+console.log(student.name);
+console.log(student.address);
+console.log(student.address.city);*/
+
+
+// ---------------------------------------
+
+class Student{
+    name:string;
+    age:number;
+    address:{
+        city:string;
+        postal:number;
+    }
+
+    constructor(name:string,age:number,address:{city:string,postal:number}) {
+        this.name=name;
+        this.age=age;
+        this.address=address;
+
+    }
+
+}
+
+const student= new Student("Mahinda",90,{city:'Kaluthara',postal:12500});
+console.log(student);
