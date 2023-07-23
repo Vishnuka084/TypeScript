@@ -15,3 +15,16 @@ interface Animal{
     age:number
 }
 let dog:Animal={name:'TOGO',bread:'Husky',age:1};
+console.log(dog.bread);
+
+
+//-------function-------
+
+function getAgeAfterThreeY(age:number,name?:string):number{
+    return age+3;
+}
+let myAge:number=getAgeAfterThreeY(10);
+
+//---------------------
+let rate:number=1.5;
+rate=2.5;
