@@ -74,5 +74,10 @@ function horekda(name:string,isThief?:boolean):void{
     }
 }
 
+////default parameter---->>
+function sum(numberOne:number,numberTwo=10):void{
+    console.log(numberOne+numberTwo);
+}
+
 horekda('Ranil',true);
 horekda('Anura',)*/
