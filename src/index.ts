@@ -1,3 +1,4 @@
+/*
 let numbers:number[]=[10,20,30,40];
 console.log(numbers[0]);//10
 
@@ -15,3 +16,40 @@ let student:[string,number]=['saman',20];
 for (let i=0;i<numbers.length;i++){
     console.log(numbers[i]);
 }
+
+for (let temp of numbers) {
+    console.log(temp);
+}
+*/
+
+// ---------
+/*
+let names=['Ranil','Mahinda','Basil'];
+console.log(names);
+
+for(let x=0;x<names.length;x++){
+   // console.log(names[x]);
+}
+
+//=============
+for (const temp of names){
+    console.log(temp);
+}*/
+
+
+//<<<<<<<<<<<<<<<<  Function >>>>>>>>>>>>>>>>
+
+//basic function
+/*
+function sayHello(message: string):void{
+    //console.log('Message :'+message);
+    console.log(`Message : ${message}`);
+}
+
+sayHello('Hello folks!');*/
+
+//Arrow function
+const helloIsuru = (message:string):void=>{
+    console.log(message);
+}
+helloIsuru('Hello  Isuru');
