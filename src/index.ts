@@ -81,3 +81,15 @@ function sum(numberOne:number,numberTwo=10):void{
 
 horekda('Ranil',true);
 horekda('Anura',)*/
+
+
+//----red parameter
+
+function sum(...values:number[]):number{
+    let count:number=0;
+    for (let temp of values){
+        count+=temp;
+    }
+    return count;
+}
+console.log(sum(10,20,30,40));
