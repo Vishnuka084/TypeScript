@@ -1,5 +1,5 @@
 "use strict";
-function sayHello(message) {
-    console.log(`Message : ${message}`);
-}
-sayHello('Hello folks!');
+const helloIsuru = function (message) {
+    console.log(message);
+};
+helloIsuru('heelo!');

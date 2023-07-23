@@ -49,7 +49,14 @@ function sayHello(message: string):void{
 sayHello('Hello folks!');*/
 
 //Arrow function
+/*
 const helloIsuru = (message:string):void=>{
     console.log(message);
 }
-helloIsuru('Hello  Isuru');
+helloIsuru('Hello  Isuru');*/
+
+//function expression
+const helloIsuru = function (message:string):void{
+    console.log(message);
+}
+helloIsuru('heelo!');
