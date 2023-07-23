@@ -189,6 +189,7 @@ const a2:Animal={
 
 
 /// -----ReadOnly property ----
+/*
 interface Animal{
     name:string;
     age?:number;//optional
@@ -208,3 +209,4 @@ const a2:Animal={
 
 }
 a1.isActive=false;
+*/
