@@ -234,9 +234,11 @@ const ranil:Ranil={name:'Ranil',age:35,horekda:true,canEnglish:true}
 const anura:Anura={name:'Anura',age:30,canEnglish:false}
 */
 
-
 /*
 // ---- inheritance ----
+=======
+// ---- inheritance ---- 01
+>>>>>>> 86f030572983661adae012ad071220752170eda9
 class Animal{
     name:string;
     age:number;
@@ -266,6 +268,7 @@ let dog=new Dog('dog',10,'Dog breed');
 console.log(animal);
 console.log(dog);
 animal.sound();
+<<<<<<< HEAD
 dog.sound();*/
 
 /// -----Abstraction---
@@ -285,3 +288,4 @@ abstract class Phone1{
 
 
 }
+

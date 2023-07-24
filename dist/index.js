@@ -1,22 +1,12 @@
 "use strict";
-class Animal {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
+class Phone1 {
+    constructor(displaySize) {
+        this.displaySize = displaySize;
     }
-    sound() {
-        console.log(`${this.name} sound`);
+    call() {
+        console.log('calling....!');
     }
-}
-class Dog extends Animal {
-    constructor(name, age, breed) {
-        super(name, age);
-        this.breed = breed;
+    message() {
+        console.log('messaging ...!');
     }
 }
-let animal = new Animal('Animal', 10);
-let dog = new Dog('dog', 10, 'Dog breed');
-console.log(animal);
-console.log(dog);
-animal.sound();
-dog.sound();
