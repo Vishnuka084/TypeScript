@@ -211,6 +211,9 @@ const a2:Animal={
 a1.isActive=false;
 */
 
+/*
+
+  <<<< extends >>>>>
 
 interface Person{
     name:string;
@@ -229,3 +232,37 @@ interface Anura extends Person{
 
 const ranil:Ranil={name:'Ranil',age:35,horekda:true,canEnglish:true}
 const anura:Anura={name:'Anura',age:30,canEnglish:false}
+*/
+
+
+// ---- inheritance ----
+class Animal{
+    name:string;
+    age:number;
+
+    constructor(name:string,age:number) {
+        this.name=name;
+        this.age=age;
+    }
+    sound():void{
+        console.log(`${this.name} sound`);
+    }
+}
+
+
+class Dog extends Animal{
+    breed:string;
+    constructor(name:string,age:number,breed:string) {
+        super(name,age);
+        this.breed=breed;
+    }
+}
+
+let animal= new Animal('Animal',10);
+let dog=new Dog('dog',10,'Dog breed');
+
+
+console.log(animal);
+console.log(dog);
+animal.sound();
+dog.sound();
