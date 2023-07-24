@@ -210,3 +210,22 @@ const a2:Animal={
 }
 a1.isActive=false;
 */
+
+
+interface Person{
+    name:string;
+    age:number;
+    canEnglish:boolean
+}
+
+interface Ranil extends Person{
+    horekda:boolean;
+}
+
+interface Anura extends Person{
+
+}
+
+
+const ranil:Ranil={name:'Ranil',age:35,horekda:true,canEnglish:true}
+const anura:Anura={name:'Anura',age:30,canEnglish:false}
