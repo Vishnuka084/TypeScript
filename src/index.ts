@@ -235,7 +235,7 @@ const anura:Anura={name:'Anura',age:30,canEnglish:false}
 */
 
 
-// ---- inheritance ----
+// ---- inheritance ---- 01
 class Animal{
     name:string;
     age:number;
