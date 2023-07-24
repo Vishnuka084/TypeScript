@@ -287,5 +287,18 @@ abstract class Phone1{
     abstract fileTransfer():void;
 
 
+} // Enjeck
+
+abstract class PhoneOshada extends Phone1{
+
+    dance():void{
+        console.log('dancing!!!!..');
+    }
+}
+
+class hasanthaPhone extends PhoneOshada{
+    fileTransfer():void {
+        console.log('hureeee!!!');
+    }
 }
 
