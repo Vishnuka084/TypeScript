@@ -271,6 +271,7 @@ animal.sound();
 <<<<<<< HEAD
 dog.sound();*/
 
+/*
 /// -----Abstraction---
 abstract class Phone1{
     private displaySize:number;
@@ -301,4 +302,16 @@ class hasanthaPhone extends PhoneOshada{
         console.log('hureeee!!!');
     }
 }
+*/
 
+/// <<<, Generic >>>>>>
+function getData<T>(value:T):T{
+    return value;
+}
+
+let numberValue= getData<number>(10);
+let stringValue= getData<string>('Nimal');
+
+
+console.log(numberValue);
+console.log(stringValue);
