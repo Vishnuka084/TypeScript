@@ -235,6 +235,7 @@ const anura:Anura={name:'Anura',age:30,canEnglish:false}
 */
 
 
+/*
 // ---- inheritance ----
 class Animal{
     name:string;
@@ -265,4 +266,22 @@ let dog=new Dog('dog',10,'Dog breed');
 console.log(animal);
 console.log(dog);
 animal.sound();
-dog.sound();
+dog.sound();*/
+
+/// -----Abstraction---
+abstract class Phone1{
+    private displaySize:number;
+    constructor(displaySize:number) {
+        this.displaySize=displaySize;
+    }
+    call():void{
+        console.log('calling....!');
+    }
+    message():void{
+        console.log('messaging ...!');
+    }
+
+    abstract fileTransfer():void;
+
+
+}
