@@ -333,17 +333,50 @@ let s3:shape<boolean>={type:true}*/
 
 ///////// <<< -----type guard -----  type of , instance , in >>> \\\\\\\\\\
 
-function setData(value:string | number):void{
+/*function setData(value:string | number):void{
     console.log(typeof value);
 }
 
-/*
+/!*
 
 function setStringNumber(value:number):void{
     console.log(typeof value);
 }
-*/
+*!/
 
 setData('String Data');
-setData(150);
+setData(150);*/
 
+// type of ---->
+/*
+function setData(value:string | number){
+    if (typeof value === 'number'){
+        console.log('this is a String');
+    }else{
+        console.log('this is a number');
+    }
+}
+setData('string data ');
+setData(150);
+*/
+
+// instance of type ----->
+class Dog{
+    sound():void{
+        console.log('dog sound');
+    }
+}
+
+class Cat{
+    walk():void{
+        console.log('cat sound');
+    }
+}
+
+function executor(value:Dog | Cat){
+    if (value instanceof Dog){
+        value.sound();
+    }else {
+        value.walk();
+    }
+}

@@ -1,9 +1,19 @@
 "use strict";
-function setStringData(value) {
-    console.log(typeof value);
+class Dog {
+    sound() {
+        console.log('dog sound');
+    }
 }
-function setStringNumber(value) {
-    console.log(typeof value);
+class Cat {
+    walk() {
+        console.log('cat sound');
+    }
 }
-setStringData('String Data');
-setStringNumber(150);
+function executor(value) {
+    if (value instanceof Dog) {
+        value.sound();
+    }
+    else {
+        value.walk();
+    }
+}
