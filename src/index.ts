@@ -411,12 +411,15 @@ function collectData(value:Dog | Cat){
 
 
 /////// assertions ////////
+/*
 interface Vehicle{
     type:string
 }
 interface Car extends Vehicle{
     drive():void;
 }
+
+
 interface Van extends Vehicle{
     stop():void;
 }
@@ -427,4 +430,15 @@ function execute(vehicle: Vehicle):void{
     // (vehicle as Van)
      (vehicle as Bus)
 
+}*/
+
+////// key of typeOf /////
+interface Student{
+    name:string;
+    age:number;
+    isActive:boolean
 }
+type StudentKeys = keyof Student; // "name " ,"age ", "isActive "
+const studentName:StudentKeys="name";
+const studentAge:StudentKeys="age";
+const studentAvailability:StudentKeys="isActive";

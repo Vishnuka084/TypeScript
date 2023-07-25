@@ -1,4 +1,4 @@
 "use strict";
-function execute(vehicle) {
-    vehicle;
-}
+const studentName = "name";
+const studentAge = "age";
+const studentAvailability = "isActive";
