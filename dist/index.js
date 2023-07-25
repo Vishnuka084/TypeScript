@@ -1,4 +1,9 @@
 "use strict";
-let s1 = { type: 'type string' };
-let s2 = { type: 150 };
-let s3 = { type: true };
+function setStringData(value) {
+    console.log(typeof value);
+}
+function setStringNumber(value) {
+    console.log(typeof value);
+}
+setStringData('String Data');
+setStringNumber(150);

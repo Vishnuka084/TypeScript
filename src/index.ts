@@ -319,12 +319,26 @@ let stringValue= getData<string>('Nimal');
 console.log(numberValue);
 console.log(stringValue);*/
 
+/*
 
-//////////////////////////////////
+///////////////Reusable component///////////////////
 interface shape<T>{
     type:T;
 }
 
 let s1:shape<string>={type:'type string'}
 let s2:shape<number>={type:150}
-let s3:shape<boolean>={type:true}
+let s3:shape<boolean>={type:true}*/
+
+
+/////////-----type guard -----
+function setStringData(value:string):void{
+    console.log(typeof value);
+}
+
+function setStringNumber(value:number):void{
+    console.log(typeof value);
+}
+
+setStringData('String Data');
+setStringNumber(150);
