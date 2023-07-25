@@ -1,8 +1,4 @@
 "use strict";
-function getData(value) {
-    return value;
-}
-let numberValue = getData(10);
-let stringValue = getData('Nimal');
-console.log(numberValue);
-console.log(stringValue);
+let s1 = { type: 'type string' };
+let s2 = { type: 150 };
+let s3 = { type: true };

@@ -304,6 +304,9 @@ class hasanthaPhone extends PhoneOshada{
 }
 */
 
+
+/*
+
 /// <<<, Generic >>>>>>
 function getData<T>(value:T):T{
     return value;
@@ -314,4 +317,14 @@ let stringValue= getData<string>('Nimal');
 
 
 console.log(numberValue);
-console.log(stringValue);
+console.log(stringValue);*/
+
+
+//////////////////////////////////
+interface shape<T>{
+    type:T;
+}
+
+let s1:shape<string>={type:'type string'}
+let s2:shape<number>={type:150}
+let s3:shape<boolean>={type:true}
