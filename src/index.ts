@@ -361,6 +361,7 @@ setData(150);
 */
 
 // instance of type ----->
+/*
 class Dog{
     sound():void{
         console.log('dog sound');
@@ -378,5 +379,31 @@ function executor(value:Dog | Cat){
         value.sound();
     }else {
         value.walk();
+    }
+}*/
+
+
+///// in ------->
+class Dog{
+    name:string;
+    constructor(name:string) {
+        this.name = name;
+    }
+
+}
+
+class Cat{
+    age:number;
+    constructor(age:number) {
+        this.age = age;
+    }
+
+}
+
+function collectData(value:Dog | Cat){
+    if ('name' in value){
+        console.log(value.name);
+    }else {
+        console.log(value.age);
     }
 }
