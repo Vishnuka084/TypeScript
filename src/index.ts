@@ -332,13 +332,15 @@ let s3:shape<boolean>={type:true}*/
 
 
 /////////-----type guard -----
-function setStringData(value:string):void{
+function setData(value:string | number):void{
     console.log(typeof value);
 }
+/*
 
 function setStringNumber(value:number):void{
     console.log(typeof value);
 }
+*/
 
-setStringData('String Data');
-setStringNumber(150);
+setData('String Data');
+setData(150);
