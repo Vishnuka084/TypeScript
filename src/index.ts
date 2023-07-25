@@ -382,6 +382,7 @@ function executor(value:Dog | Cat){
     }
 }*/
 
+/*
 
 ///// in ------->
 class Dog{
@@ -406,4 +407,24 @@ function collectData(value:Dog | Cat){
     }else {
         console.log(value.age);
     }
+}*/
+
+
+/////// assertions ////////
+interface Vehicle{
+    type:string
+}
+interface Car extends Vehicle{
+    drive():void;
+}
+interface Van extends Vehicle{
+    stop():void;
+}
+interface Bus extends Vehicle{
+    stop():void;
+}
+function execute(vehicle: Vehicle):void{
+    // (vehicle as Van)
+     (vehicle as Bus)
+
 }
