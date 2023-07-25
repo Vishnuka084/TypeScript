@@ -331,10 +331,12 @@ let s2:shape<number>={type:150}
 let s3:shape<boolean>={type:true}*/
 
 
-/////////-----type guard -----
+///////// <<< -----type guard -----  type of , instance , in >>> \\\\\\\\\\
+
 function setData(value:string | number):void{
     console.log(typeof value);
 }
+
 /*
 
 function setStringNumber(value:number):void{
@@ -344,3 +346,4 @@ function setStringNumber(value:number):void{
 
 setData('String Data');
 setData(150);
+
